@@ -1,0 +1,46 @@
+.filter_block{
+  margin-bottom: 50px;
+}
+.my_work--list{
+  text-align: center;
+  list-style-type: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0;
+}
+.my_work--element{
+  display: block;
+  margin-bottom: 10px;
+  @media(min-width: 768px){
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  span{
+    display: inline-block;
+    padding: 10px 30px 10px;
+    color: #cecece;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+    &:hover,&:active,&:focus{
+      color: #000;
+    }
+  }
+}
+span.active{
+  color: #000;
+  border: 2px solid #0052c2;
+  padding: 8px 28px 8px;
+}
+
+#filter-project .mix{
+  display: none;
+}

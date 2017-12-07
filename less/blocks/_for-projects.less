@@ -1,0 +1,117 @@
+.wrap__card--progect{
+  text-align: left;
+}
+.wrap__card--progect a{
+  text-decoration: none;
+}
+.project__card {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  @media(min-width: 768px){
+    margin-bottom: 50px;
+  }
+  @media(min-width: 1200px){
+    margin-bottom: 70px;
+  }
+}
+
+.project__image{
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  background-image: url("../img/placeholders/project_placeholder.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media(min-width: 768px){
+    min-height: 150px;
+
+  }
+  @media(min-width: 1200px){
+    height: 250px;
+  }
+}
+
+
+
+.project__image:hover a.project__card--hover{
+  display: block;
+  top:0;
+}
+
+.project__name a{
+  display: inline-block;
+  color: #000;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #000;
+  @media(min-width: 768px){
+    font-size: 20px;
+  }
+  &:hover,&:focus{
+    color: #0052c2;
+    border-bottom: 1px dotted #0052c2;
+  }
+}
+.project__description{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  @media(min-width: 768px){
+    font-size:16px;
+    line-height: 24px;
+  }
+}
+
+//----------hover for project__card------------------//
+a.project__card--hover{
+  text-decoration: none;
+  display: block;
+  background-color: rgba(0,82,194,0.9);
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  padding-top: 90px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  -webkit-transition: top 0.5s ease-out;
+  transition: top 0.5s ease-out;
+
+  @media(min-width: 768px){
+    padding-top: 30px;
+  }
+  @media(min-width: 1200px){
+    padding-top: 60px;
+  }
+  .fa{
+    font-size: 50px;
+    @media(min-width: 768px){
+      font-size: 55px;
+      margin-bottom: 5px;
+    }
+    @media(min-width: 1200px){
+      font-size: 64px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.project__hover--text{
+  font-size: 20px;
+  font-weight: 400;
+  display: none;
+  @media(min-width: 768px){
+    display: block;
+    font-size: 20px;
+  }
+  @media(min-width: 1200px){
+    font-size: 26px;
+  }
+}
