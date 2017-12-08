@@ -26,10 +26,12 @@
     display: inline-block;
     padding: 10px 30px 10px;
     color: #cecece;
+    border: 2px solid #fff;
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
     cursor: pointer;
+    transition: color 0.3s ease-in;
     &:hover,&:active,&:focus{
       color: #000;
     }
@@ -38,7 +40,8 @@
 span.active{
   color: #000;
   border: 2px solid #0052c2;
-  padding: 8px 28px 8px;
+  padding: 10px 30px 10px;
+  transition: border 0.3s ease-in;
 }
 
 #filter-project .mix{

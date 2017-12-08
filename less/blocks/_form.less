@@ -13,12 +13,16 @@
   color: #00599a;
   font-weight: 700;
   line-height: 32px;
-  padding: 10px 20px 12px;
+  padding: 7px 15px 9px;
   border-radius: 8px;
   border: 3px solid #fff;
   outline: none;
+  transition: border-color 0.3s ease-in;
   &:hover,&:active,&:focus{
     border: 3px solid #a2d1f4;
+  }
+  @media(min-width: 768px){
+    padding: 10px 20px 12px;
   }
 }
 .form__input--w49{
@@ -32,7 +36,6 @@
 .form__input--textarea__wrap{
   margin: 0;
   padding: 0;
-  margin-bottom: 5px;
   position: relative;
   &:after{
     position: absolute;
@@ -52,7 +55,8 @@
     font-weight: 700;
     font-size: 16px;
     width: 100%;
-    padding: 10px 20px 12px;
+    padding: 7px 15px 9px;
+    margin-bottom: 10px;
     color: #00599a;
     border-radius: 8px;
     border: 3px solid #fff;
@@ -60,8 +64,12 @@
     outline: none;
     resize: vertical;
     overflow: hidden;
+    transition: border-color 0.3s ease-in;
     &:hover,&:active,&:focus{
       border: 3px solid #a2d1f4;
+    }
+    @media(min-width: 768px){
+      padding: 10px 20px 12px;
     }
   }
 }
@@ -75,6 +83,7 @@
   line-height: 32px;
   border-radius: 80px;
   outline: none;
+  transition: all 0.3s ease-in;
   @media(min-width: 768px){
     width: auto;
   }
@@ -86,5 +95,33 @@
     background-color: transparent;
     border: 4px solid #ffe400;
     color: #ffe400;
+  }
+}
+label.error {
+  background-color: #c62828;
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  color: #fff;
+  padding: 5px 15px 8px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 2px;
+
+  @cornerSize: 12px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 40px;
+
+    margin-left: -@cornerSize;
+    width: 0;
+    height: 0;
+    border-bottom: @cornerSize solid #a16178;
+    border-right: @cornerSize solid transparent;
+    border-left: @cornerSize solid transparent;
+
   }
 }
